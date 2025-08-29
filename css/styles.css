@@ -80,6 +80,13 @@ nav.navbar{
         a{
           color: var(--darkGrey);
         }
+        a:hover, a.active{
+          color: var(--peach);
+          text-decoration: underline;
+          text-decoration-color: var(--lightPeach);
+          text-decoration-thickness: .2rem;
+          text-underline-offset: .4rem;
+        }
       }
     }
   }
@@ -117,6 +124,11 @@ section.hero-banner{
       background-color: var(--white);
       border-radius: .8rem;
       padding: 1.8rem 2.4rem;
+      transition: all ease-in-out .3s;
+    }
+    a:hover{
+      background-color: var(--lightPeach);
+      color: var(--white);
     }
   }
   .hero-banner__picture{
@@ -333,6 +345,11 @@ section.hero-banner{
       background-color: var(--white);
       border-radius: .8rem;
       padding: 1.8rem 2.4rem;
+      transition: all ease-in-out .3s;
+    }
+    a:hover{
+      background-color: var(--lightPeach);
+      color: var(--white);
     }
   }
 }
@@ -457,3 +474,77 @@ footer.footer{
 }
 /***** FIN FOOTER *****/
 
+/***** INICIO ESTILOS PÁGINAS INTERNAS SERVICIOS  *****/
+
+.hero-section{
+  width: 100%;
+  background-color: var(--peach);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 6.4rem;
+  text-align: center;
+  color: var(--white);
+  h1{
+    font-size: 3.2rem;
+  }
+  p{
+    font-size: 1.5rem;
+  }
+}
+
+.projects__container{
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 16rem auto;
+  @media (width >= 1100px) {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3.2rem;
+  }
+}
+
+article.project__card{
+  width: 100%;
+  border-radius: 1.5rem;
+  background-color:#FDF3F0;
+  .project__card-cover{
+    width: 100%;
+    display: block;
+    border-radius: 1.5rem 1.5rem 0 0;
+  }
+  .project__card-info{
+    display: block;
+    padding: 3.2rem 3rem;
+    text-align: center;
+    h2{
+      color: var(--peach);
+      text-transform: uppercase;
+      margin-bottom: 1.6rem;
+    }
+    p{
+      color: var(--darkGrey);
+      font-size: 1.6rem;
+    }
+  }
+}
+
+@media (width >= 1100px) {
+  .project__card-info{
+    display: block;
+    padding: 3.2rem 3rem;
+    text-align: center;
+    h2{
+      color: var(--peach);
+      text-transform: uppercase;
+      margin-bottom: 1.6rem;
+      
+    }
+    p{
+      color: var(--darkGrey);
+      font-size: 1.6rem;
+    }
+  }
+}
+
+/***** FIN ESTILOS PÁGINAS INTERNAS SERVICIOS  *****/
