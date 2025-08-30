@@ -1,23 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
+
   <title>Frontend Mentor | Designo Agency Website Challenge</title>
 </head>
+
 <body>
-  Our Company
-  Locations
-  Contact
+  <!DOCTYPE html>
+  <html lang="en">
 
-  App design
-  Our mobile designs bring intuitive digital solutions to your customers right at their fingertips.
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+    <title>DESIGNO | About</title>
+    <link rel="stylesheet" href="./css/styles.css">
+  </head>
 
-  Airfilter
-  Solving the problem of poor indoor air quality by filtering the air
+  <body>
+
+    <header class="container header">
+      <nav class="navbar">
+        <a class="navbar__logo" href="./index.html" aria-label="Enlace página principal">
+          <img src="./assets/shared/desktop/logo-dark.png" alt="Logo">
+        </a>
+        <button class="navbar__btn-menu" type="button" aria-label="Menu">
+          <img src="./assets/shared/mobile/icon-hamburger.svg" alt="">
+        </button>
+        <ul class="navbar__links">
+          <li><a href="./index.html" class="active">Home</a></li>
+          <li><a href="#">Our Company</a></li>
+          <li><a href="#">Locations</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+
+    <section class="hero-section">
+      <h1>App design</h1>
+      <p>Our mobile designs bring intuitive digital solutions to your customers right at their fingertips.</p>
+    </section>
+
+    <main class="container">
+
+      <section class="projects__container">
+        <article class="project__card">
+          <img class="project__card-cover" src="./assets/web-design/desktop/image-express.jpg" alt="Project Express">
+          <a class="project__card-info" href="#">
+            <h2>Airfilter</h2>
+            <p>Solving the problem of poor indoor air quality by filtering the air</p>
+          </a>
+        </article>
+        <article class="project__card">
+          <img class="project__card-cover" src="./assets/web-design/desktop/image-transfer.jpg" alt="Project Express">
+          <a class="project__card-info" href="#">
+            <h2>Eyecam</h2>
+            <p>Product that lets you edit your favorite photos and videos at any time</p>
+          </a>
+        </article>
+        <article class="project__card">
+          <img class="project__card-cover" src="./assets/web-design/desktop/image-photon.jpg" alt="Project Express">
+          <a class="project__card-info" href="#">
+            <h2>Faceit</h2>
+            <p>Get to meet your favorite internet superstar with the faceit app</p>
+          </a>
+        </article>
+        <article class="project__card">
+          <img class="project__card-cover" src="./assets/web-design/desktop/image-builder.jpg" alt="Project Express">
+          <a class="project__card-info" href="#">
+            <h2>Todo</h2>
+            <p>A todo app that features cloud sync with light and dark mode</p>
+          </a>
+        </article>
+        <article class="project__card">
+          <img class="project__card-cover" src="./assets/web-design/desktop/image-blogr.jpg" alt="Project Express">
+          <a class="project__card-info" href="#">
+            <h2>Loopstudios</h2>
+            <p>A VR experience app made for Loopstudios</p>
+          </a>
+        </article>
+      </section>
+
+      <section class="other-services__container">
+        <a href="./web-design.html" class="service__card service_02">
+          <article>
+            <h2>Web Design</h2>
+            <span>View Projects</span>
+          </article>
+        </a>
+        <a href="./graphic-design.html" class="service__card service_03">
+          <article>
+            <h2>Graphic Design</h2>
+            <span>View Projects</span>
+          </article>
+        </a>
+      </section>
+
+
+    </main>
+    <aside class="container cta">
+      <div class="cta__info">
+        <h2>Let’s talk about your project</h2>
+        <p>Ready to take it to the next level? Contact us today and find out how our expertise can help your business
+          grow.
+        </p>
+      </div>
+      <div class="cta__action">
+        <a href="#">Get in touch</a>
+      </div>
+    </aside>
+
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__one">
+          <img src="./assets/shared/desktop/logo-light.png" alt="" class="logo">
+          <hr>
+          <ul class="links">
+            <li><a href="#">Our company</a></li>
+            <li><a href="#">Locations</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer__two">
+          <div>
+            Designo Central Office<br>
+            3886 Wellington Street<br>
+            Toronto, Ontario M9C 3J5<br>
+          </div>
+          <div>
+            Contact Us (Central Office)<br>
+            P : +1 253-863-8967<br>
+            M : contact@designo.co<br>
+          </div>
+          <div class="social__links">
+            <a href="#" aria-label="Enlace Facebook"><img src="./assets/shared/desktop/icon-facebook.svg" alt=""></a>
+            <a href="#" aria-label="Enlace Instagram"><img src="./assets/shared/desktop/icon-instagram.svg" alt=""></a>
+            <a href="#" aria-label="Enlace Youtube"><img src="./assets/shared/desktop/icon-youtube.svg" alt=""></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+
+  </html>
+
+
 
   Eyecam
   Product that lets you edit your favorite photos and videos at any time
@@ -54,4 +187,5 @@
   P : +1 253-863-8967
   M : contact@designo.co
 </body>
+
 </html>

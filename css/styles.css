@@ -22,6 +22,11 @@ html{
 body{
   font-family: "Jost", sans-serif;
   font-optical-sizing: auto;
+  @media (width >= 1100PX) {
+    background-image: url('../assets/shared/desktop/bg-pattern-leaf.svg');
+    background-repeat: no-repeat;
+    background-position: left center;
+  }
 }
 
 /***** INICIO GENERALES *****/
@@ -193,87 +198,78 @@ section.hero-banner{
   flex-direction: column;
   gap: 2.4rem;
   margin: 12rem auto;
-  a.service__card{
-    height: 25rem;
-    display: flex;
-    flex-direction: column;
-    gap: 1.2rem;
-    border-radius: 1.5rem;
-    align-items: center;
-    justify-content: center;
-    color: var(--white);
-    text-transform: uppercase;
-    text-align: center;
-    h2{
-      font-size: 2.8rem;
-      font-weight: 400;
-    }
-    span{
-      color: var(--white);
-      font-size: 1.5rem;
-      color: var(--white);
-      letter-spacing: .2rem;
-      text-align: center;
-    }
-    span::after{
-      content: url('../assets/shared/desktop/icon-right-arrow.svg');
-      margin-left: .8rem;
-    }
-  }
-  #service_01, 
-  #service_02,
-  #service_03{
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-blend-mode: multiply;
-    background-color: var(--darkGrey);
-    transition: all ease-in-out .3s;
-  }
-  #service_01{
-    background-image: url('../assets/home/desktop/image-web-design-small.jpg');
-    @media (width >= 1100px) {
-      background-image: url('../assets/home/desktop/image-web-design-large.jpg');
-    }
-  }
-  #service_02{
-    background-image: url('../assets/home/desktop/image-app-design.jpg');
-  }
-  #service_03{
-    background-image: url('../assets/home/desktop/image-graphic-design.jpg');
+}
 
+a.service__card{
+  height: 25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  border-radius: 1.5rem;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  text-transform: uppercase;
+  text-align: center;
+  h2{
+    font-size: 2.8rem;
+    font-weight: 400;
   }
-  #service_01:hover, 
-  #service_02:hover,
-  #service_03:hover{
-    background-color: var(--lightPeach);
-    background-blend-mode: normal;
-    background-image: none;
-    opacity: 1;
-    color: var(--darkGrey);
-    span{
-      color: var(--darkGrey)
-    }
+  span{
+    color: var(--white);
+    font-size: 1.5rem;
+    color: var(--white);
+    letter-spacing: .2rem;
+    text-align: center;
+  }
+  span::after{
+    content: url('../assets/shared/desktop/icon-right-arrow.svg');
+    margin-left: .8rem;
+  }
+}
+
+.service_01, 
+.service_02,
+.service_03{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: multiply;
+  background-color: var(--darkGrey);
+  transition: all ease-in-out .3s;
+}
+.service_01{
+  background-image: url('../assets/home/desktop/image-web-design-small.jpg');
+  @media (width >= 1100px) {
+    background-image: url('../assets/home/desktop/image-web-design-large.jpg');
+  }
+}
+.service_02{
+  background-image: url('../assets/home/desktop/image-app-design.jpg');
+}
+.service_03{
+  background-image: url('../assets/home/desktop/image-graphic-design.jpg');
+
+}
+.service_01:hover, 
+.service_02:hover,
+.service_03:hover{
+  background-color: var(--lightPeach);
+  background-blend-mode: normal;
+  background-image: none;
+  opacity: 1;
+  color: var(--darkGrey);
+  span{
+    color: var(--darkGrey)
   }
 }
 
 @media (width >= 1100px){
   .services__container{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: "one two"
-                         "one three";
-    #service_01{
-      grid-area: one;
-      height: auto;
-    }
-    #service_02{
-      grid-area: two;
-    } 
-    #service_03{
-      grid-area: three;
-    } 
+    grid-template-columns: repeat(3, 1fr);
   }
+
 }
 /***** FIN SERVICIOS *****/
 
@@ -478,7 +474,8 @@ footer.footer{
 
 .hero-section{
   width: 100%;
-  background-color: var(--peach);
+  max-width: 110rem;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -486,21 +483,34 @@ footer.footer{
   padding: 6.4rem;
   text-align: center;
   color: var(--white);
+  background-color: var(--peach);
+  background-image: url('../assets/web-design/desktop/bg-pattern-intro-web.svg');
+  @media (width >= 1100px){
+    border-radius: 1.5rem;
+  }
   h1{
     font-size: 3.2rem;
+    @media (width >= 1100px){
+      font-size: 4.8rem;
+    }
   }
   p{
     font-size: 1.5rem;
+     @media (width >= 1100px){
+      max-width: 25em;
+      font-size: 1.6rem;
+     }
   }
 }
 
 .projects__container{
   display: grid;
   grid-template-columns: 1fr;
-  margin: 16rem auto;
+  margin: 12rem auto;
+  gap: 3.2rem;
   @media (width >= 1100px) {
     grid-template-columns: repeat(3, 1fr);
-    gap: 3.2rem;
+    margin: 16rem auto;
   }
 }
 
@@ -508,15 +518,22 @@ article.project__card{
   width: 100%;
   border-radius: 1.5rem;
   background-color:#FDF3F0;
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  border-radius: 1.5rem;
+  overflow: hidden;
   .project__card-cover{
     width: 100%;
+    height: 100%;
+    object-fit: cover;
     display: block;
-    border-radius: 1.5rem 1.5rem 0 0;
   }
   .project__card-info{
     display: block;
     padding: 3.2rem 3rem;
     text-align: center;
+    transition: all ease-in-out .3s;
+    border-radius: 0 0 1.5rem 1.5rem;
     h2{
       color: var(--peach);
       text-transform: uppercase;
@@ -528,22 +545,75 @@ article.project__card{
     }
   }
 }
+.project__card-info:hover{
+  background-color: var(--lightPeach);
+}
+
 
 @media (width >= 1100px) {
+  article.project__card{
+    grid-template-columns: 1fr;
+  }
   .project__card-info{
     display: block;
     padding: 3.2rem 3rem;
     text-align: center;
+    overflow: hidden;
     h2{
       color: var(--peach);
       text-transform: uppercase;
       margin-bottom: 1.6rem;
-      
+      font-weight: 400;
+      letter-spacing: .5rem;
     }
     p{
       color: var(--darkGrey);
       font-size: 1.6rem;
     }
+
+  }
+
+}
+
+.other-services__container{
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  margin-bottom: 12rem;
+  /* a.service__card{
+    height: 25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    border-radius: 1.5rem;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    text-transform: uppercase;
+    text-align: center;
+    h2{
+      font-size: 2.8rem;
+      font-weight: 400;
+    }
+    span{
+      color: var(--white);
+      font-size: 1.5rem;
+      color: var(--white);
+      letter-spacing: .2rem;
+      text-align: center;
+    }
+    span::after{
+      content: url('../assets/shared/desktop/icon-right-arrow.svg');
+      margin-left: .8rem;
+    }
+  } */
+}
+
+@media (width >= 1100px){
+  .other-services__container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 16rem;
   }
 }
 
