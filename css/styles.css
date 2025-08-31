@@ -1,49 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
-
-:root{
-  --peach: #E7816B;
-  --black: #1D1C1E;
-  --white: #FFFFFF;
-  --lightPeach: #FFAD9B;
-  --darkGrey: #333136;
-  --lightGrey: #F1F3F5;
-}
-
-*{
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-html{
-  font-size: 10px;
-}
-
-body{
-  font-family: "Jost", sans-serif;
-  font-optical-sizing: auto;
-  @media (width >= 1100PX) {
-    background-image: url('../assets/shared/desktop/bg-pattern-leaf.svg');
-    background-repeat: no-repeat;
-    background-position: left center;
-  }
-}
-
-/***** INICIO GENERALES *****/
-li{
-  list-style: none;
-}
-a{
-  text-decoration: none;
-}
-
-.container{
-  width: 85%;
-  max-width: 110rem;
-  margin: 0 auto;
-}
-/***** FIN GENERALES *****/
-
+@import url('generals.css');
 
 /***** INICIO HEADER *****/
 
@@ -309,6 +264,9 @@ a.service__card{
 /***** INICIO CALL TO ACTION *****/
 .cta{
   background-color: var(--peach);
+  background-image: url('../assets/shared/desktop/bg-pattern-call-to-action.svg');
+  background-repeat: no-repeat;
+  background-position: right top;
   border-radius: 1.5rem;
   display: flex;
   flex-direction: column;
@@ -480,16 +438,19 @@ footer.footer{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 6.4rem;
+  padding: 10rem 6.4rem;
   text-align: center;
   color: var(--white);
   background-color: var(--peach);
   background-image: url('../assets/web-design/desktop/bg-pattern-intro-web.svg');
+  background-repeat: no-repeat;
+  background-position: right top;
   @media (width >= 1100px){
     border-radius: 1.5rem;
   }
   h1{
     font-size: 3.2rem;
+    font-weight: 500;
     @media (width >= 1100px){
       font-size: 4.8rem;
     }
@@ -570,9 +531,7 @@ article.project__card{
       color: var(--darkGrey);
       font-size: 1.6rem;
     }
-
   }
-
 }
 
 .other-services__container{
@@ -580,33 +539,6 @@ article.project__card{
   flex-direction: column;
   gap: 2.4rem;
   margin-bottom: 12rem;
-  /* a.service__card{
-    height: 25rem;
-    display: flex;
-    flex-direction: column;
-    gap: 1.2rem;
-    border-radius: 1.5rem;
-    align-items: center;
-    justify-content: center;
-    color: var(--white);
-    text-transform: uppercase;
-    text-align: center;
-    h2{
-      font-size: 2.8rem;
-      font-weight: 400;
-    }
-    span{
-      color: var(--white);
-      font-size: 1.5rem;
-      color: var(--white);
-      letter-spacing: .2rem;
-      text-align: center;
-    }
-    span::after{
-      content: url('../assets/shared/desktop/icon-right-arrow.svg');
-      margin-left: .8rem;
-    }
-  } */
 }
 
 @media (width >= 1100px){
