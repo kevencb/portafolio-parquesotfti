@@ -22,11 +22,6 @@ html{
 body{
   font-family: "Jost", sans-serif;
   font-optical-sizing: auto;
-  @media (width >= 1100PX) {
-    background-image: url('../assets/shared/desktop/bg-pattern-leaf.svg');
-    background-repeat: no-repeat;
-    background-position: left center;
-  }
 }
 
 /***** INICIO GENERALES *****/

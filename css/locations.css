@@ -1,0 +1,84 @@
+@import url('generals.css');
+@import url('styles.css');
+
+.locations__container{
+	max-width: 110rem;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	gap: 4rem;
+	margin: 0 auto 12rem;
+	@media (width >= 1100px) {
+		margin: 0 auto 16rem;
+}
+
+.location__card{
+	display: flex;
+	flex-direction: column;
+	@media (width >= 1100px) {
+		flex-direction: row;
+		gap: 3rem;
+
+	}
+	.location__img{
+		width: 100%;
+		@media (width >= 1100px) {
+			width: 35rem;
+			border-radius: 1.5rem;
+			overflow: hidden;
+			background-color: aqua;
+			}
+		}
+		img{
+			width: 100%;
+			object-fit: cover;
+			object-position: center;
+			display: block;
+			@media (width >= 1100px) {
+				width: 35rem;
+				height: 100%;
+				object-fit: cover;
+			}
+		}
+	}
+	.location__info{
+		padding: 8rem 2.4rem;
+		background-color: #FDF3F0;
+		background-image: url('../assets/shared/desktop/bg-pattern-two-circles.svg');
+		background-repeat: no-repeat;
+		color: var(--darkGrey);
+		@media (width >= 1100px) {
+			width: 73rem;
+			padding: 8.8rem 9.5rem;
+			border-radius: 1.5rem;
+			overflow: hidden;
+		}
+		.location__info-title{
+			font-size: 3.2rem;
+			font-weight: 400;
+			text-align: center;
+			color: var(--peach);
+			margin-bottom: 2.4rem;
+			@media (width >= 1100px) {
+				text-align: left;
+			}
+		}
+		.location__description{
+			display: flex;
+			flex-direction: column;
+			gap: 2.4rem;
+			font-size: 1.5rem;
+			text-align: center;
+			@media (width >= 1100px) {
+				flex-direction: row;
+				text-align: left;
+			}
+		}
+	}
+}
+
+@media (width >= 1100px) {
+	.location__card:nth-child(odd){
+		flex-direction: row-reverse;
+	}
+}
