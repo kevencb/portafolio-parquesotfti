@@ -4,151 +4,119 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-
-  <title>Frontend Mentor | Designo Agency Website Challenge</title>
+  <title>DESIGNO | Graphic Design</title>
+  <link rel="stylesheet" href="/css/styles.css">
 </head>
 
 <body>
+  <header class="container header">
+    <nav class="navbar">
+      <a class="navbar__logo" href="./index.html" aria-label="Enlace página principal">
+        <img src="./assets/shared/desktop/logo-dark.png" alt="Logo">
+      </a>
+      <button class="navbar__btn-menu" type="button" aria-label="Menu">
+        <img src="./assets/shared/mobile/icon-hamburger.svg" alt="">
+      </button>
+      <ul class="navbar__links">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./about.html">Our Company</a></li>
+        <li><a href="./locations.html">Locations</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  <!DOCTYPE html>
-  <html lang="en">
+  <section class="hero-section">
+    <h1>Graphic design</h1>
+    <p>We deliver eye-catching branding materials that are tailored to meet your business objectives.</p>
+  </section>
 
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-    <title>DESIGNO | About</title>
-    <link rel="stylesheet" href="./css/styles.css">
-  </head>
-
-  <body>
-
-    <header class="container header">
-      <nav class="navbar">
-        <a class="navbar__logo" href="./index.html" aria-label="Enlace página principal">
-          <img src="./assets/shared/desktop/logo-dark.png" alt="Logo">
+  <main class="container">
+    <section class="projects__container">
+      <article class="project__card">
+        <img class="project__card-cover" src="./assets/graphic-design/desktop/image-change.jpg" alt="Project Express">
+        <a class="project__card-info" href="#">
+          <h2>Tim Brown</h2>
+          <p>A book cover designed for Tim Brown’s new release, ‘Change’</p>
         </a>
-        <button class="navbar__btn-menu" type="button" aria-label="Menu">
-          <img src="./assets/shared/mobile/icon-hamburger.svg" alt="">
-        </button>
-        <ul class="navbar__links">
-          <li><a href="./index.html" class="active">Home</a></li>
-          <li><a href="#">Our Company</a></li>
-          <li><a href="#">Locations</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
-
-
-    <section class="hero-section">
-      <h1>Graphic design</h1>
-      <p>We deliver eye-catching branding materials that are tailored to meet your business objectives.</p>
+      </article>
+      <article class="project__card">
+        <img class="project__card-cover" src="./assets/graphic-design/desktop/image-boxed-water.jpg"
+          alt="Project Express">
+        <a class="project__card-info" href="#">
+          <h2>Boxed water</h2>
+          <p>A simple packaging concept made for Boxed Water</p>
+        </a>
+      </article>
+      <article class="project__card">
+        <img class="project__card-cover" src="./assets/graphic-design/desktop/image-science.jpg" alt="Project Express">
+        <a class="project__card-info" href="#">
+          <h2>Science!</h2>
+          <p>A poster made in collaboration with the Federal Art Project</p>
+        </a>
+      </article>
     </section>
 
-    <main class="container">
-
-      <section class="projects__container">
-        <article class="project__card">
-          <img class="project__card-cover" src="./assets/graphic-design/desktop/image-change.jpg" alt="Project Express">
-          <a class="project__card-info" href="#">
-            <h2>Tim Brown</h2>
-            <p>A book cover designed for Tim Brown’s new release, ‘Change’</p>
-          </a>
+    <section class="other-services__container">
+      <a href="./app-design.html" class="service__card service_02">
+        <article>
+          <h2>App Design</h2>
+          <span>View Projects</span>
         </article>
-        <article class="project__card">
-          <img class="project__card-cover" src="./assets/graphic-design/desktop/image-boxed-water.jpg"
-            alt="Project Express">
-          <a class="project__card-info" href="#">
-            <h2>Boxed water</h2>
-            <p>A simple packaging concept made for Boxed Water</p>
-          </a>
+      </a>
+      <a href="./web-design.html" class="service__card service_03">
+        <article>
+          <h2>Web Design</h2>
+          <span>View Projects</span>
         </article>
-        <article class="project__card">
-          <img class="project__card-cover" src="./assets/graphic-design/desktop/image-science.jpg"
-            alt="Project Express">
-          <a class="project__card-info" href="#">
-            <h2>Science!</h2>
-            <p>A poster made in collaboration with the Federal Art Project</p>
-          </a>
-        </article>
-      </section>
-
-      <section class="other-services__container">
-        <a href="./app-design.html" class="service__card service_02">
-          <article>
-            <h2>App Design</h2>
-            <span>View Projects</span>
-          </article>
-        </a>
-        <a href="./web-design.html" class="service__card service_03">
-          <article>
-            <h2>Web Design</h2>
-            <span>View Projects</span>
-          </article>
-        </a>
-      </section>
+      </a>
+    </section>
 
 
-    </main>
-    <aside class="container cta">
-      <div class="cta__info">
-        <h2>Let’s talk about your project</h2>
-        <p>Ready to take it to the next level? Contact us today and find out how our expertise can help your business
-          grow.
-        </p>
+  </main>
+  <aside class="container cta">
+    <div class="cta__info">
+      <h2>Let’s talk about your project</h2>
+      <p>Ready to take it to the next level? Contact us today and find out how our expertise can help your business
+        grow.
+      </p>
+    </div>
+    <div class="cta__action">
+      <a href="./contact.html">Get in touch</a>
+    </div>
+  </aside>
+
+  <footer class="footer">
+    <div class="footer__container">
+      <div class="footer__one">
+        <img src="./assets/shared/desktop/logo-light.png" alt="" class="logo">
+        <hr>
+        <ul class="links">
+          <li><a href="./about.html">Our company</a></li>
+          <li><a href="./locations.html">Locations</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
       </div>
-      <div class="cta__action">
-        <a href="#">Get in touch</a>
-      </div>
-    </aside>
-
-    <footer class="footer">
-      <div class="footer__container">
-        <div class="footer__one">
-          <img src="./assets/shared/desktop/logo-light.png" alt="" class="logo">
-          <hr>
-          <ul class="links">
-            <li><a href="#">Our company</a></li>
-            <li><a href="#">Locations</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
+      <div class="footer__two">
+        <div>
+          Designo Central Office<br>
+          3886 Wellington Street<br>
+          Toronto, Ontario M9C 3J5<br>
         </div>
-        <div class="footer__two">
-          <div>
-            Designo Central Office<br>
-            3886 Wellington Street<br>
-            Toronto, Ontario M9C 3J5<br>
-          </div>
-          <div>
-            Contact Us (Central Office)<br>
-            P : +1 253-863-8967<br>
-            M : contact@designo.co<br>
-          </div>
-          <div class="social__links">
-            <a href="#" aria-label="Enlace Facebook"><img src="./assets/shared/desktop/icon-facebook.svg" alt=""></a>
-            <a href="#" aria-label="Enlace Instagram"><img src="./assets/shared/desktop/icon-instagram.svg" alt=""></a>
-            <a href="#" aria-label="Enlace Youtube"><img src="./assets/shared/desktop/icon-youtube.svg" alt=""></a>
-          </div>
+        <div>
+          Contact Us (Central Office)<br>
+          P : +1 253-863-8967<br>
+          M : contact@designo.co<br>
+        </div>
+        <div class="social__links">
+          <a href="#" aria-label="Enlace Facebook"><img src="./assets/shared/desktop/icon-facebook.svg" alt=""></a>
+          <a href="#" aria-label="Enlace Instagram"><img src="./assets/shared/desktop/icon-instagram.svg" alt=""></a>
+          <a href="#" aria-label="Enlace Youtube"><img src="./assets/shared/desktop/icon-youtube.svg" alt=""></a>
         </div>
       </div>
-    </footer>
-  </body>
-
-  </html>
-
-
-
-
-
-
-
-
-
-
-
+    </div>
+  </footer>
 </body>
 
 </html>

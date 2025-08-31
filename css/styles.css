@@ -378,7 +378,7 @@ footer.footer{
   text-align: center;
   color: var(--lightGrey);
   font-size: 1.6rem;
-  margin: 4rem auto;
+  margin: 4rem auto 6rem;
   display: flex;
   flex-direction: column;
   gap: 4rem;

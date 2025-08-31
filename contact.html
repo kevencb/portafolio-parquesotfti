@@ -1,48 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Designo Agency Website Challenge</title>
+  <title>DESIGNO | Contact</title>
+  <link rel="stylesheet" href="./css/contact.css">
 </head>
+
 <body>
-  Our Company
-  Locations
-  Contact
+  <header class="container header">
+    <nav class="navbar">
+      <a class="navbar__logo" href="./index.html" aria-label="Enlace página principal">
+        <img src="./assets/shared/desktop/logo-dark.png" alt="Logo">
+      </a>
+      <button class="navbar__btn-menu" type="button" aria-label="Menu">
+        <img src="./assets/shared/mobile/icon-hamburger.svg" alt="">
+      </button>
+      <ul class="navbar__links">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./about.html">Our Company</a></li>
+        <li><a href="./locations.html">Locations</a></li>
+        <li><a href="./contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  Contact us
-  Ready to take it to the next level? Let’s talk about your project or idea and find out how 
-  we can help your business grow. If you are looking for unique digital experiences that’s 
-  relatable to your users, drop us a line.
+  <main>
+    <section class="contact__container">
+      <div class="contact__info">
+        <h1>Contact us</h1>
+        <p>Ready to take it to the next level? Let’s talk about your project or idea and find out how
+          we can help your business grow. If you are looking for unique digital experiences that’s
+          relatable to your users, drop us a line.</p>
+      </div>
+      <form class="contact__form">
+        <input type="text" placeholder="Name">
+        <input type="email" placeholder="Email Address">
+        <input type="tel" placeholder="Phone">
+        <textarea type="text" placeholder="Your Message"></textarea>
+        <button class="btn-action" type="submit">Submit</button>
+      </form>
+    </section>
 
-  Name
-  Email address
-  Phone
-  Your message
-  Submit
+    <section class="locations__container container">
+      <article class="location">
+        <img class="location__icon" src="./assets/shared/desktop/illustration-canada.svg" alt="">
+        <div class="location__info">
+          <h3>Canada</h3>
+          <a href="./locations.html">See Location</a>
+        </div>
+      </article>
+      <article class="location">
+        <img class="location__icon" src="./assets/shared/desktop/illustration-australia.svg" alt="">
+        <div class="location__info">
+          <h3>Australia</h3>
+          <a href="./locations.html">See Location</a>
+        </div>
+      </article>
+      <article class="location">
+        <img class="location__icon" src="./assets/shared/desktop/illustration-united-kingdom.svg" alt="">
+        <div class="location__info">
+          <h3>United Kingdom</h3>
+          <a href="./locations.html">See Location</a>
+        </div>
+      </article>
+    </section>
+  </main>
 
-  Canada
-  See location
-
-  Australia
-  See location
-
-  United Kingdom
-  See location
-
-  Our company
-  Locations
-  Contact
-
-  Designo Central Office
-  3886 Wellington Street
-  Toronto, Ontario M9C 3J5
-
-  Contact Us (Central Office)
-  P : +1 253-863-8967
-  M : contact@designo.co
+  <footer class="footer__contact">
+    <div class="footer__container">
+      <div class="footer__one">
+        <img src="./assets/shared/desktop/logo-light.png" alt="" class="logo">
+        <hr>
+        <ul class="links">
+          <li><a href="./about.html">Our company</a></li>
+          <li><a href="./locations.html">Locations</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer__two">
+        <div>
+          Designo Central Office<br>
+          3886 Wellington Street<br>
+          Toronto, Ontario M9C 3J5<br>
+        </div>
+        <div>
+          Contact Us (Central Office)<br>
+          P : +1 253-863-8967<br>
+          M : contact@designo.co<br>
+        </div>
+        <div class="social__links">
+          <a href="#" aria-label="Enlace Facebook"><img src="./assets/shared/desktop/icon-facebook.svg" alt=""></a>
+          <a href="#" aria-label="Enlace Instagram"><img src="./assets/shared/desktop/icon-instagram.svg" alt=""></a>
+          <a href="#" aria-label="Enlace Youtube"><img src="./assets/shared/desktop/icon-youtube.svg" alt=""></a>
+        </div>
+      </div>
+    </div>
+  </footer>
 </body>
+
 </html>
